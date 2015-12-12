@@ -9,12 +9,12 @@ while true
     else
       bye_count == bye_count
     end
-    if grandmas_reply = if greeting != greeting.upcase
+    if greeting != greeting.upcase
       puts "SPEAK UP CHILD!!!! YOURE WHISPERING AGAIN!!!"
     else
       puts "NOT SINCE #{rand(1929..1950)}"
     end
-  end
+  # end
 end
 
 
