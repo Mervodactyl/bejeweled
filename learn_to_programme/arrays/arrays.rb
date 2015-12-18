@@ -7,7 +7,7 @@ while true
     break
   else
     array.push "#{word}"
-end
+  end
 end
 
 puts "Now lets sort them:"
