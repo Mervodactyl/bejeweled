@@ -1,6 +1,5 @@
 puts "How many bottles of beer shall we sing?"
-bottle_count = gets.chomp
-bottle_count = bottle_count.to_i
+bottle_count = gets.chomp.to_i
 
 while bottle_count > 1
     puts "#{bottle_count} bottles of beer on the wall!"
@@ -8,7 +7,11 @@ while bottle_count > 1
     puts "You take one down,"
     puts "You pass it around!!!"
     bottle_count -= 1
-    puts "Now you've got #{bottle_count} bottles of beer on the wall!"
+      if bottle_count == 1
+        puts "Now you've got only #{bottle_count} bottle of beer on the wall!"
+      else
+        puts "Now you've got #{bottle_count} bottles of beer on the wall!"
+      end
   if bottle_count == 1
     puts "Only #{bottle_count} bottle of beer on the wall!"
     puts "Only #{bottle_count} bottle of beer!!!"

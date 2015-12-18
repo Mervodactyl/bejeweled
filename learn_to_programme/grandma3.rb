@@ -14,7 +14,6 @@ while true
     else
       puts "NOT SINCE #{rand(1929..1950)}"
     end
-  # end
 end
 
 

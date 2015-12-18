@@ -1,13 +1,18 @@
 puts "Please enter a year to start from:"
-starting_point = gets.chomp
-starting_point = starting_point.to_i
+starting_point = gets.chomp.to_i
 puts "Please enter a year to end on:"
-ending_point = gets.chomp
-ending_point = ending_point.to_i
-leap_years = 0
+ending_point = gets.chomp.to_i
 
-  if (starting_point..ending_point % 4 == 0) && (starting_point..ending_point % 400 == 0)
-    puts leap_years
-  else
-    puts "This time frame has no leap years!"
+while true
+  puts "The 'Leap Years' found between #{starting_point} and #{ending_point} are as follows: "
+  range = starting_point..ending_point
+  range.to_a
+  if range.each { | year | % 4 == 0 }
+    puts range
+  else range.each { | year | % 400 == 0 } && { | year | % 100 == 0 }
+    puts range
+  # elsif
+    # puts "This time frame has no leap years!"
   end
+  break
+end
